@@ -2,6 +2,7 @@
   background: {
     color: $menu-color;
   }
+  padding-bottom: 1rem;
 
   &__logo {
     font-size: 2em;
@@ -45,7 +46,7 @@
     }
 
     &__nav {
-      margin-top: 3rem;
+      margin-top: 4rem;
       float: right;
     }
   }
