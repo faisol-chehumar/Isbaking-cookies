@@ -4,13 +4,42 @@
 
   &__contact {
     float: left;
+    margin-top: 1rem;
 
     > li {
       margin-right: 1rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    > li > a {
+      padding: 0;
     }
   }
 
   &__social {
     float: right;
+
+    > li {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-sm) {
+  .menu-top {
+    &__contact {
+
+      > li {
+        margin-right: 1rem;
+        display: inline-block;
+      }
+    }
+
+    &__social {
+      > li {
+        display: inline-block;
+      }
+    }
   }
 }
