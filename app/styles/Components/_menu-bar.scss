@@ -1,0 +1,26 @@
+.menu-bar {
+  background: {
+    color: $menu-color;
+  }
+
+  &__logo {
+    font-size: 2em;
+    margin: 5rem 0;
+  }
+
+  &__nav {
+    margin-top: 4rem;
+
+    li.active > a,
+    li.active > a:hover,
+    li.active > a:focus,
+    li.active > a:active {
+      color: $black-color;
+      background-color: transparent;
+    }
+
+    li.active > a {
+      border-bottom: 4px solid $primary-color;
+    }
+  }
+}

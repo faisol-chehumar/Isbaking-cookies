@@ -1,0 +1,8 @@
+// Overwrite nav style
+
+.nav > li > a:hover,
+.nav > li > a:focus,
+.nav > li > a:active {
+  background-color: transparent;
+  color: $font-color-dark;
+}

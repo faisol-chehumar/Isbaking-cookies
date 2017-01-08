@@ -1,0 +1,10 @@
+@media screen and (min-width: $screen-sm) {
+  .cover {
+    background-color: $primary-color; 
+    padding: 20rem 0;
+
+    &__header {
+      font-size: 8em;
+    }
+  }
+}
