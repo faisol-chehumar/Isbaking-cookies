@@ -1,0 +1,16 @@
+.menu-top {
+  border-bottom: 1px solid rgba($black-color, .3);
+  padding: 1rem 0;
+
+  &__contact {
+    float: left;
+
+    > li {
+      margin-right: 1rem;
+    }
+  }
+
+  &__social {
+    float: right;
+  }
+}

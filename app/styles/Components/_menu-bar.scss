@@ -5,11 +5,10 @@
 
   &__logo {
     font-size: 2em;
-    margin: 5rem 0;
+    text-align: center;
   }
 
   &__nav {
-    margin-top: 4rem;
 
     li.active > a,
     li.active > a:hover,
@@ -21,6 +20,33 @@
 
     li.active > a {
       border-bottom: 4px solid $primary-color;
+    }
+  }
+
+  &__tel-btn {
+    background-color: #efefef;
+    border: 1px solid rgba(4, 4, 4, 0.08);
+    margin-top: 1rem;
+    border-radius: 5px;
+    transition: all .5s ease;
+
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-sm) {
+  .menu-bar {
+    &__logo {
+      font-size: 2em;
+      margin: 5rem 0;
+      float: left;
+    }
+
+    &__nav {
+      margin-top: 3rem;
+      float: right;
     }
   }
 }
