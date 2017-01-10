@@ -1,8 +1,9 @@
 .menu-bar {
   background: {
-    color: $menu-color;
+    color: rgb(252, 252, 252);
   }
   padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.1);
 
   &__logo {
     font-size: 2em;
@@ -39,14 +40,16 @@
 
 @media screen and (min-width: $screen-sm) {
   .menu-bar {
+    padding-bottom: 0;;
+
     &__logo {
       font-size: 2em;
-      margin: 5rem 0;
+      margin: 4rem 0;
       float: left;
     }
 
     &__nav {
-      margin-top: 4rem;
+      margin-top: 2.5rem;
       float: right;
     }
   }
