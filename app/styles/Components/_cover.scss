@@ -1,40 +1,52 @@
 .cover {
-  // background-color: rgba($white-color, .2);
-  padding: 15rem 4rem;
+  background-color: rgba(249, 249, 249, 0.83);
+  border-bottom: 1px solid #e4e4e4;
+  padding: 20rem 0 4rem;
   position: relative;
 
   &:before {
     content: '';
     display: block;
     width: 100%;
-    height: 100%;
+    height: 20rem;
     background-image: url('../images/isbaking-cover-sm.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 1;
     top: 0;
     left: 0;
+    position: absolute;
   }
 
   &__header {
-    font-size: 1em;
+    font-size: 3em;
     font-weight: 800;
   }
   
   &__btn--primary {
-    background-color: $white-color;
-    border: 0;
+    border: 1px solid rgba(202, 202, 202, 0.48);
+    background-color: rgb(244, 244, 241);
     border-radius: 5px;
-    margin-top: 3rem;
+    box-shadow: 0px 2px 2px rgba(72, 69, 69, 0.3);
+    margin-top: 2rem;
     padding: 1rem 8rem;
+    outline: none;
   } 
 }
 
 @media screen and (min-width: $screen-sm) {
   .cover {
-    background-image: url('../images/isbaking-cover.jpg');
+    padding: 18rem 0;
+    background-color: transparent;
+    
+    &:before {
+      background-image: url('../images/isbaking-cover.jpg');
+      height: 60rem;
+      z-index: -1;
+    }
+
     &__header {
-      font-size: 8em;
+      font-size: 6em;
       margin-bottom: 2rem;
     }
 
@@ -43,7 +55,7 @@
     }
 
     &__btn--primary {
-
+      background-color: #fff;
     }
   }
 }

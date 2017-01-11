@@ -1,6 +1,7 @@
 .customer {
-  background-color: rgba(#fff, .9);
+  background-color: rgba(#000, .6);
   position: relative;
+  color: #fff;
 
   &:before {
     background-image: url(../images/user-review-bg.jpg);
@@ -33,7 +34,7 @@
 @media screen and (min-width: $screen-sm) {
   .customer {
     &__review > p {
-      min-height: 25rem;
+      min-height: 28rem;
     }
   }
 }

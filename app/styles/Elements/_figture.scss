@@ -1,0 +1,10 @@
+figture {
+  display: block;
+  border: 1px solid #ddd;
+  min-height: 5rem;
+
+  > figcaption {
+    padding: 2rem;
+    min-height: 22rem;
+  }
+}

@@ -1,0 +1,28 @@
+.bd-btm {
+  border-bottom: 1px solid #eee;
+}
+
+.buy-btn {
+  width: 100%;
+  display: block;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+
+.footer {
+  background-color: #111;
+  
+  > p {
+    color: #fff;
+    margin-bottom: 0;
+  }
+}
+
+.site-info {
+  background: #222;
+  color: #fff;
+
+  p {
+    color: #999;
+  }
+}
