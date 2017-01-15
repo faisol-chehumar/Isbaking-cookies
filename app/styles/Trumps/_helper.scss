@@ -11,7 +11,7 @@
 
 .footer {
   background-color: #111;
-  
+
   > p {
     color: #fff;
     margin-bottom: 0;
@@ -21,6 +21,10 @@
 .site-info {
   background: #222;
   color: #fff;
+
+  a {
+    color: #999;
+  }
 
   p {
     color: #999;
