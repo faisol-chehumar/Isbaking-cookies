@@ -57,20 +57,166 @@
     
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
-      .menu {
+      /* Menu-sm */
+      .menu-sm {
         padding: 1rem 0;
         border-bottom: 1px solid rgba(34, 34, 34, 0.2);
       }
 
-      .menu-top__contact {
-        float: left;
-        margin-top: 1rem;
+      .menu-sm__grp,
+      .menu-sm__grp--left,
+      .menu-sm__grp--right {
+        position: relative;
+        text-align: center;
       }
 
-      .menu-top__contact li {
-        margin-right: 1rem;
+      .menu-sm__grp p {
+        margin: auto;
+      }
+
+      /* Pagination */
+      .pag {
+        position: absolute !important;
+        width: 100%;
+        left: 0;
+      }
+
+      .pag__left {
+        float: left;
+      }
+
+      .pag__right {
+        float: right;
+      }
+
+      .pag__right.glyphicon {
+        margin-right: 0;
+      }
+
+      /* Menu-main */
+      .menu-main {
+        background-color: rgb(252, 252, 252);
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(34, 34, 34, 0.1);
+        text-align: center;
+      }
+      
+      .menu-main__logo {
+        font-size: 2em;
+      }
+
+      .menu-main li.active > a,
+      .menu-main li.active > a:hover,
+      .menu-main li.active > a:focus,
+      .menu-main li.active > a:active {
+        color: #111;
+        background-color: transparent;
+      }
+
+      .menu-main li.active > a {
+        border-bottom: 4px solid #222;
+      }
+
+      /* Cover */
+      .cover {
+        background-color: rgba(249, 249, 249, 0.83);
+        border-bottom: 1px solid #e4e4e4;
+        padding: 20rem 0 4rem;
+        position: relative;
+      }
+
+      .cover:before {
+        content: '';
         display: block;
-        margin-bottom: 0.5rem;
+        width: 100%;
+        height: 20rem;
+        background-image: url('../images/isbaking-cover-sm.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
+
+      .cover__header {
+        font-size: 3em;
+        font-weight: 800;
+      }
+
+      .cover__btn--primary {
+        border: 1px solid rgba(202, 202, 202, 0.48);
+        background-color: #222;
+        border-radius: 5px;
+        color: #fff;
+        box-shadow: 0px 2px 2px rgba(72, 69, 69, 0.3);
+        margin-top: 2rem;
+        padding: 1rem 8rem;
+        outline: none;
+        width: 80%;
+      }
+      
+      .cover__btn--primary:hover,
+      .cover__btn--primary:focus,
+      .cover__btn--primary:active {
+        color: #fff !important;
+      }
+
+      @media screen and (min-width: 768px) {
+        /* Menu-sm */
+        .menu-sm__grp--left {
+          float: left;
+        }
+
+        .menu-sm__grp--right {
+          float: right;
+        }
+        
+        /* Pagination */
+        .menu-sm .pag {
+          display: none;
+        }
+
+        /* Menu-main */
+        .menu-main {
+          padding-bottom: 0;
+        }
+
+        .menu-main__logo {
+          font-size: 2em;
+          margin: 4rem 0;
+          float: left;
+        }
+
+        .menu-main__nav {
+          margin-top: 3rem;
+          float: right;
+        }
+
+        /* Cover */
+        .cover {
+          padding: 18rem 0;
+          background-color: transparent;
+        }
+
+        .cover:before {
+          background-image: url('../images/isbaking-cover.jpg');
+          height: 59rem;
+          z-index: -1;
+        }
+
+        .cover__header {
+          font-size: 6em;
+          margin-bottom: 2rem;
+        }
+
+        .cover__lead {
+          font-size: 1.4em;
+        }
+
+        .cover__btn--primary {
+          width: 40%;
+        }
       }
     </style>
     <!-- Above the fold of content -->
@@ -93,23 +239,27 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <div class="menu-top">
+    <div class="menu-sm">
       <div class="container">
-        <ul class="nav menu-top__contact">
-          <li><span class="glyphicon glyphicon-time" title="Open-Close"></span><time>9.00 - 21.00</time></li>
-          <li><a href="mailto:isbaking@gmail.com" title="email"><span class="glyphicon glyphicon-envelope"></span>isbaking@gmail.com</a></li>
-          <li><a href="tel:+66617455464" title="Mobile"><span class="glyphicon glyphicon-earphone"></span>061-7455464</a></li>
+        <ul class="nav menu-sm__grp--left">
+          <li><p><span class="glyphicon glyphicon-time" title="Open-Close"></span><time>9.00 - 21.00</time></p></li>
+          <li class="hidden-xs"><a href="mailto:isbaking@gmail.com" title="email"><span class="glyphicon glyphicon-envelope"></span>isbaking@gmail.com</a></li>
+          <li class="hidden-xs"><a href="tel:+66617455464" title="Mobile"><span class="glyphicon glyphicon-earphone"></span>061-7455464</a></li>
+          <li class="pag">
+            <span class="pag__right glyphicon glyphicon-chevron-right"></span>
+            <span class="pag__left glyphicon glyphicon-chevron-left"></span>
+          </li>
         </ul>
-        <ul class="nav menu-top__social">
+        <ul class="nav menu-sm__grp--right">
           <li><a href="https://www.facebook.com/Isbakingcookies/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i> Fanpage</a></li>
-          <li><a href= "http://line.me/ti/p/%40praeline" title="Line">Line: Praeline</a></li>
+          <li>Line: Praeline</li>
         </ul>
       </div>
     </div>
-    <nav class="menu-bar" role="navigation">
+    <nav class="menu-main" role="navigation">
       <div class="container">
-        <h3 class="menu-bar__logo">ISBAKING</h3>
-        <ul class="menu-bar__nav nav nav-pills">
+        <h3 class="menu-main__logo">ISBAKING</h3>
+        <ul class="menu-main__nav nav">
           <li class="active"><a href="#">หน้าแรก</a></li>
           <li><a href="#">บทความ</a></li>
           <li><a href="#">เกี่ยวกับเรา</a></li>
@@ -127,7 +277,7 @@
           <div class="col-sm-8">
             <h1 class="cover__header">คุกกี้โฮมเมด</h1>
             <p class="cover__lead">เราคือศิลปินที่ปรุงคุกกี้ ให้ออกมาเป็นศิลปะที่อร่อย!!!</p>
-            <a class="btn cover__btn--primary" href="http://line.me/ti/p/%40praeline">สั่งซื้อคุกกี้! ทาง Facebook</a>
+            <a class="btn cover__btn--primary" href="https://www.messenger.com/t/isbakingcookies/" target="_blank">สั่งซื้อคุกกี้! ทาง Facebook</a>
           </div>
         </div>
       </div>
