@@ -3,8 +3,11 @@ figture {
   border: 1px solid #ddd;
   min-height: 5rem;
 
-  > figcaption {
+  figcaption {
     padding: 2rem;
-    min-height: 22rem;
+  }
+
+  > figcaption {
+    min-height: 24rem;
   }
 }
