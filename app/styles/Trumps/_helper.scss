@@ -7,10 +7,17 @@
 }
 
 .buy-btn {
+  color: #fff;
   width: 100%;
   display: block;
-  background-color: #eee;
+  background-color: #222;
   border: 1px solid #ddd;
+}
+
+.buy-btn:hover,
+.buy-btn:focus,
+.buy-btn:active {
+  color: #fff;
 }
 
 .footer {
