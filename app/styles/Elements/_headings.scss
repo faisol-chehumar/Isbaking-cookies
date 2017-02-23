@@ -1,5 +1,6 @@
 @for $i from 1 through 6 {
   h#{$i} {
-    font-family: "Roboto", "Mitr";
+    font-family: 'robotoblack', 'Mitr';
+    font-weight: 500;
   }
 }
